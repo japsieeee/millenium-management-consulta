@@ -1,9 +1,8 @@
 import { Link, useNavigate } from 'react-router-dom';
+import { BiSolidChevronDown } from 'react-icons/bi';
 import { IRoute } from '../../../types/routes';
 
-import { BiSolidChevronDown } from 'react-icons/bi';
-
-const Navbar = () => {
+function Navbar() {
   const navigate = useNavigate();
   const handleNavigate = (path: IRoute['path']) => navigate(path);
 
@@ -16,7 +15,7 @@ const Navbar = () => {
             Millenium Management Consulta
           </Link>
         </div>
-        <div className="flex items-center text-[16px]">
+        <div className="flex items-center text-[20px]">
           <div className="group relative duration-200 mr-6">
             <div className="flex items-center">
               <Link to="/" className="mr-1">
@@ -26,12 +25,13 @@ const Navbar = () => {
             </div>
 
             <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 top-10 right-0 bg-white text-black shadow duration-200 rounded-sm min-w-[170px]">
-              <p
-                className="cursor-pointer hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2"
+              <button
+                type="button"
+                className="cursor-pointer hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left"
                 onClick={() => handleNavigate('/about')}
               >
                 About
-              </p>
+              </button>
             </div>
           </div>
 
@@ -44,18 +44,20 @@ const Navbar = () => {
             </div>
 
             <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 top-10 right-0 bg-white text-black shadow duration-200 rounded-sm min-w-[220px]">
-              <p
-                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2"
+              <button
+                type="button"
+                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left"
                 onClick={() => handleNavigate('/services/general-liason')}
               >
                 General Liason Services
-              </p>
-              <p
-                className="cursor-pointer hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2"
+              </button>
+              <button
+                type="button"
+                className="cursor-pointer hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left"
                 onClick={() => handleNavigate('/services/consulting')}
               >
                 Consulting Services
-              </p>
+              </button>
             </div>
           </div>
 
@@ -68,58 +70,55 @@ const Navbar = () => {
             </div>
 
             <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 top-10 right-0 bg-white text-black shadow duration-200 rounded-sm min-w-[220px]">
-              <p
-                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2"
+              <button
+                type="button"
+                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left"
                 onClick={() => handleNavigate('/operations/supply-chain')}
               >
                 Supply Chain
-              </p>
-              <p
-                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2"
-                onClick={() =>
-                  handleNavigate('/operations/marketing-management')
-                }
+              </button>
+              <button
+                type="button"
+                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left"
+                onClick={() => handleNavigate('/operations/marketing-management')}
               >
                 Marketing Management
-              </p>
-              <p
-                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2"
-                onClick={() =>
-                  handleNavigate('/operations/financial-management')
-                }
+              </button>
+              <button
+                type="button"
+                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left"
+                onClick={() => handleNavigate('/operations/financial-management')}
               >
                 Financial Management
-              </p>
-              <p
-                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2"
-                onClick={() =>
-                  handleNavigate('/operations/human-resource-management')
-                }
+              </button>
+              <button
+                type="button"
+                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left"
+                onClick={() => handleNavigate('/operations/human-resource-management')}
               >
                 Human Resource Management
-              </p>
-              <p
-                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2"
-                onClick={() =>
-                  handleNavigate('/operations/management-information')
-                }
+              </button>
+              <button
+                type="button"
+                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left"
+                onClick={() => handleNavigate('/operations/management-information')}
               >
                 Management Information
-              </p>
-              <p
-                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2"
+              </button>
+              <button
+                type="button"
+                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left"
                 onClick={() => handleNavigate('/operations/operation')}
               >
                 Operation
-              </p>
-              <p
-                className="cursor-pointer hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2"
-                onClick={() =>
-                  handleNavigate('/operations/material-management')
-                }
+              </button>
+              <button
+                type="button"
+                className="cursor-pointer hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left"
+                onClick={() => handleNavigate('/operations/material-management')}
               >
                 Material Management
-              </p>
+              </button>
             </div>
           </div>
 
@@ -132,24 +131,27 @@ const Navbar = () => {
             </div>
 
             <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 top-10 right-0 bg-white text-black shadow duration-200 rounded-sm min-w-[220px]">
-              <p
-                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2"
+              <button
+                type="button"
+                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left"
                 onClick={() => handleNavigate('/sign-in')}
               >
                 Sign In
-              </p>
-              <p
-                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2"
+              </button>
+              <button
+                type="button"
+                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left"
                 onClick={() => handleNavigate('/subscription/payment')}
               >
                 Payment
-              </p>
-              <p
-                className="cursor-pointer hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2"
+              </button>
+              <button
+                type="button"
+                className="cursor-pointer hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left"
                 onClick={() => handleNavigate('/terms-and-privacy')}
               >
                 Terms and Privacy
-              </p>
+              </button>
             </div>
           </div>
 
@@ -169,6 +171,6 @@ const Navbar = () => {
       {/* mobile */}
     </div>
   );
-};
+}
 
 export default Navbar;
