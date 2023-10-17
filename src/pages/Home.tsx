@@ -12,17 +12,17 @@ import HomeSvg from '/images/homeSvg.svg';
 function Home() {
   return (
     <Layout>
-      <div className="flex flex-col lg:flex-row items-center mt-10">
-        <div className="w-full flex flex-col justify-center items-center">
+      <div className="flex flex-col-reverse lg:flex-row items-center py-10">
+        <div className="w-full flex flex-col justify-center items-center text-indigo-950">
           <div
             id="box"
-            className="px-5 lg:px-0 max-w-[400px] mt-10 leading-tight"
+            className="px-5 lg:px-0 max-w-[500px] mt-10 leading-tight"
           >
-            <h1 className="font-bold text-[34px]">
+            <h1 className="font-bold text-[34px] animate-fade-down animate-delay-[500ms]">
               Modern Platform For Your Business
             </h1>
 
-            <p className="text-[26px] mt-3">
+            <p className="text-[26px] mt-3 animate-fade-down animate-delay-[300ms]">
               Quickly and Easily Create Any Business Document
             </p>
 
@@ -30,15 +30,15 @@ function Home() {
 
             <Button action={() => {}} label="Get Started" size="20" isBlock />
 
-            <p className="text-[22px] mt-5">
+            <p className="text-[22px] mt-5 animate-fade-down">
               Customizable and Ready made Business documents compatible with:
             </p>
 
-            <div className="flex justify-center lg:justify-start items-center justify-start mt-5">
+            <div className="flex lg:justify-start items-center justify-start mt-5">
               <Link
                 to="https://www.microsoft.com/en/microsoft-365/word?market=ph"
                 target="_blank"
-                className="mr-2"
+                className="mr-2 animate-jump-in animate-delay-[500ms]"
               >
                 <img
                   src={Word}
@@ -49,7 +49,7 @@ function Home() {
               <Link
                 to="https://www.microsoft.com/en/microsoft-365/excel?market=ph"
                 target="_blank"
-                className="mr-2"
+                className="mr-2 animate-jump-in animate-delay-[700ms]"
               >
                 <img
                   src={Excel}
@@ -60,7 +60,7 @@ function Home() {
               <Link
                 to="https://www.google.com/docs/about/"
                 target="_blank"
-                className="mr-2"
+                className="mr-2 animate-jump-in animate-delay-[900ms]"
               >
                 <img
                   src={Docs}
@@ -71,7 +71,7 @@ function Home() {
               <Link
                 to="https://www.google.com/drive/"
                 target="_blank"
-                className="mr-2"
+                className="mr-2 animate-jump-in animate-delay-[1100ms]"
               >
                 <img
                   src={Drive}
@@ -82,7 +82,7 @@ function Home() {
               <Link
                 to="https://www.office.com/"
                 target="_blank"
-                className="mr-2"
+                className="mr-2 animate-jump-in animate-delay-[1300ms]"
               >
                 <img
                   src={Office}
@@ -100,7 +100,7 @@ function Home() {
           >
             <img
               src={HomeSvg}
-              className="h-[600px]"
+              className="h-[600px] animate-jump-in animate-delay-[1500ms]"
               alt="People illustrations by Storyset"
             />
           </Link>

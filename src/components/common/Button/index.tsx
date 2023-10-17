@@ -16,7 +16,7 @@ const Button: React.FC<IButton> = ({
   <button
     type="button"
     onClick={action}
-    className={`bg-indigo-900 text-white hover:bg-indigo-700 active:bg-indigo-950 duration-200 p-2 rounded text-[${size}px] ${
+    className={`bg-indigo-900 text-white hover:bg-indigo-700 active:bg-indigo-950 duration-200 p-2 rounded text-[${size}px] animate-fade-down ${
       isBlock && 'w-full'
     }`}
   >
