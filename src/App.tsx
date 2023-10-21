@@ -1,6 +1,10 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import Services from './pages/Services';
+import BusinessCompliance from './pages/Services/BusinessCompliance';
+import Operations from './pages/Operations';
+import Subscriptions from './pages/Subscriptions';
 
 function App() {
   const router = createBrowserRouter([
@@ -14,19 +18,19 @@ function App() {
     },
     {
       path: '/services',
-      element: <h1>Services</h1>,
+      element: <Services />,
     },
     {
-      path: '/services/general-liason',
-      element: <h1>General Liason</h1>,
+      path: '/services/business-compliance',
+      element: <BusinessCompliance />,
     },
     {
-      path: '/services/consulting',
-      element: <h1>Consulting</h1>,
+      path: '/services/financial-accounting',
+      element: <h1>Financial Accounting</h1>,
     },
     {
       path: '/operations',
-      element: <h1>Operation</h1>,
+      element: <Operations />,
     },
     {
       path: '/operations/supply-chain',
@@ -41,32 +45,20 @@ function App() {
       element: <h1>Supply Chain</h1>,
     },
     {
-      path: '/operations/human-resource-management',
+      path: '/operations/human-resource-development',
       element: <h1>Supply Chain</h1>,
     },
     {
-      path: '/operations/operation',
+      path: '/operations/business-processing-outsource',
       element: <h1>Operation</h1>,
     },
     {
-      path: '/operations/management-information',
-      element: <h1>Supply Chain</h1>,
+      path: '/subscriptions',
+      element: <Subscriptions />,
     },
     {
-      path: '/operations/material-management',
-      element: <h1>Material Info</h1>,
-    },
-    {
-      path: '/subscription',
-      element: <h1>Subscription</h1>,
-    },
-    {
-      path: '/subscription/payment',
+      path: '/subscriptions/payment',
       element: <h1>Payment</h1>,
-    },
-    {
-      path: '/subscription/terms-and-privacy',
-      element: <h1>Terms and privacy</h1>,
     },
     {
       path: '/terms-and-privacy',

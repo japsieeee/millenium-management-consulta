@@ -23,7 +23,7 @@ const Footer = () => (
       </Link>
       <Link
         className="mx-5 hover:text-blue-300 duration-150"
-        to="/subscription"
+        to="/subscriptions"
       >
         Subscription
       </Link>

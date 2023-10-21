@@ -18,7 +18,7 @@ function Navbar() {
           </Link>
         </div>
         <div className="flex items-center text-[18px]">
-          <div className="group relative duration-200 mr-6">
+          <div className="group relative duration-200 mr-6 z-10">
             <div className="flex items-center hover:opacity-80 duration-150">
               <Link to="/" className="mr-1">
                 Home
@@ -37,7 +37,7 @@ function Navbar() {
             </div>
           </div>
 
-          <div className="group relative duration-200 mr-6">
+          <div className="group relative duration-200 mr-6 z-10">
             <div className="flex items-center hover:opacity-80 duration-150">
               <Link to="/services" className="mr-1">
                 Services
@@ -45,33 +45,33 @@ function Navbar() {
               <BiSolidChevronDown />
             </div>
 
-            <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 top-10 right-0 bg-white text-black shadow duration-200 rounded-sm min-w-[220px]">
+            <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 top-10 right-0 bg-white text-black shadow duration-200 rounded-sm min-w-[250px]">
               <button
                 type="button"
                 className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left rounded"
-                onClick={() => handleNavigate('/services/general-liason')}
+                onClick={() => handleNavigate('/services/business-compliance')}
               >
-                General Liason Services
+                Business Compliance Services
               </button>
               <button
                 type="button"
                 className="cursor-pointer hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left rounded"
-                onClick={() => handleNavigate('/services/consulting')}
+                onClick={() => handleNavigate('/services/financial-accounting')}
               >
-                Consulting Services
+                Financial Accounting Services
               </button>
             </div>
           </div>
 
-          <div className="group relative duration-200 mr-6">
+          <div className="group relative duration-200 mr-6 z-10">
             <div className="flex items-center hover:opacity-80 duration-150">
               <Link to="/operations" className="mr-1">
-                Operation
+                Operations
               </Link>{' '}
               <BiSolidChevronDown />
             </div>
 
-            <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 top-10 right-0 bg-white text-black shadow duration-200 rounded-sm min-w-[220px]">
+            <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 top-10 right-0 bg-white text-black shadow duration-200 rounded-sm min-w-[250px]">
               <button
                 type="button"
                 className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left rounded"
@@ -96,37 +96,23 @@ function Navbar() {
               <button
                 type="button"
                 className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left rounded"
-                onClick={() => handleNavigate('/operations/human-resource-management')}
+                onClick={() => handleNavigate('/operations/human-resource-development')}
               >
-                Human Resource Management
+                Human Resource Development
               </button>
               <button
                 type="button"
                 className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left rounded"
-                onClick={() => handleNavigate('/operations/management-information')}
+                onClick={() => handleNavigate('/operations/business-process-outsource')}
               >
-                Management Information
-              </button>
-              <button
-                type="button"
-                className="cursor-pointer mb-1 hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left rounded"
-                onClick={() => handleNavigate('/operations/operation')}
-              >
-                Operation
-              </button>
-              <button
-                type="button"
-                className="cursor-pointer hover:bg-indigo-900 hover:text-white duration-100 px-3 py-2 w-full text-left rounded"
-                onClick={() => handleNavigate('/operations/material-management')}
-              >
-                Material Management
+                Business Processing Outsource
               </button>
             </div>
           </div>
 
-          <div className="group relative duration-200 mr-6">
+          <div className="group relative duration-200 mr-6 z-10">
             <div className="flex items-center hover:opacity-80 duration-150">
-              <Link to="/subscription" className="mr-1">
+              <Link to="/subscriptions" className="mr-1">
                 Subscription
               </Link>{' '}
               <BiSolidChevronDown />
@@ -157,14 +143,14 @@ function Navbar() {
             </div>
           </div>
 
-          <div className="mr-6 hover:opacity-80 duration-150">
+          <div className="mr-6 z-10 hover:opacity-80 duration-150">
             <Link to="/contact" className="mr-1">
               Contact
             </Link>
           </div>
 
-          <div>
-            <Link to="/sign-in hover:opacity-80 duration-150" className="mr-1">
+          <div className="hover:opacity-80 duration-150">
+            <Link to="/sign-in" className="mr-1">
               Sign In
             </Link>
           </div>
