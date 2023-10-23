@@ -1,5 +1,4 @@
 /* eslint-disable react/no-array-index-key */
-/* eslint-disable no-shadow */
 import { Link } from 'react-router-dom';
 import { IoBusinessSharp } from 'react-icons/io5';
 import { LuSquareStack } from 'react-icons/lu';
@@ -60,7 +59,7 @@ const Operations = () => {
 
   return (
     <Layout>
-      <div className="-mx-4 flex flex-wrap p-8">
+      <div className="mx-4 flex flex-wrap p-8">
         {servicesInfo.map((service, index) => (
           <div
             className={`w-full px-4 md:w-1/2 lg:w-1/3 animate-jump-in animate-delay-[${service.delay}ms]`}

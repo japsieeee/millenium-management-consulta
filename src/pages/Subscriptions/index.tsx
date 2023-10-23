@@ -1,5 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 import { Link } from 'react-router-dom';
+import { BsCheck2 } from 'react-icons/bs';
 import { AiOutlineGift } from 'react-icons/ai';
 import Layout from '../../components/layout';
 import { SubscriptionCard } from '../../types/subscriptions';
@@ -37,7 +38,183 @@ const Subscriptions = () => {
 
   return (
     <Layout>
-      <div className="-mx-4 flex flex-wrap p-8">
+      <div className="mx-4 flex flex-wrap p-8">
+        <div className="w-full mb-20">
+          <div className="flex justify-center items-center">
+            <div className="">
+              <div className="text-center font-semibold">
+                <h1 className="text-5xl">
+                  <span className="text-blue-700 tracking-wide">Flexible </span>
+                  <span>Plans</span>
+                </h1>
+                <p className="pt-6 text-xl text-gray-400 font-normal w-full px-8 md:w-full">
+                  Choose a plan that works best for you and
+                  <br /> your team.
+                </p>
+              </div>
+              <div className="pt-24 flex items-center flex-col lg:flex-row">
+                <div className="w-96 p-8 bg-white text-center rounded-3xl pr-16 shadow-xl">
+                  <h1 className="text-black font-semibold text-2xl">Basic</h1>
+                  <p className="pt-2 tracking-wide">
+                    <span className="text-gray-400 align-top">$ </span>
+                    <span className="text-3xl font-semibold">14.99</span>
+                    <span className="text-gray-400 font-medium">/ monthly</span>
+                  </p>
+                  <hr className="mt-4 border-1" />
+                  <div className="pt-8">
+                    <p className="font-semibold text-gray-400 text-left">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        Financial Statement Preparation
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">Bookkeeping Services</span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">Basic Tax and Compliance</span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">Business Launch Guidance</span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">Basic Financial Planning</span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">Basic Financial Analysis</span>
+                    </p>
+
+                    <Link to="/">
+                      <p className="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                        <span className="font-medium">Choose Plan</span>
+                        <span className="pl-2 material-icons align-middle text-sm">
+                          east
+                        </span>
+                      </p>
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="w-80 p-8 bg-gray-900 text-center rounded-3xl text-white border-4 shadow-xl border-white transform scale-125 my-20 lg:my-0">
+                  <h1 className="text-white font-semibold text-2xl">Pro</h1>
+                  <p className="pt-2 tracking-wide">
+                    <span className="text-gray-400 align-top">$ </span>
+                    <span className="text-3xl font-semibold">19.99</span>
+                    <span className="text-gray-400 font-medium">/ monthly</span>
+                  </p>
+                  <hr className="mt-4 border-1 border-gray-600" />
+                  <div className="pt-8">
+                    <p className="font-semibold text-gray-400 text-left">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        All features in{' '}
+                        <span className="text-white">Basic</span>
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        Flexible{' '}
+                        <span className="text-white">call scheduling</span>
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        <span className="text-white">15 TB</span> cloud storage
+                      </span>
+                    </p>
+
+                    <Link to="/">
+                      <p className="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                        <span className="font-medium">Choose Plan</span>
+                        <span className="pl-2 material-icons align-middle text-sm">
+                          east
+                        </span>
+                      </p>
+                    </Link>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <p className="bg-blue-700 font-semibold px-4 py-1 rounded-full uppercase text-xs">
+                      Popular
+                    </p>
+                  </div>
+                </div>
+
+                <div className="w-96 p-8 bg-white text-center rounded-3xl pl-16 shadow-xl">
+                  <h1 className="text-black font-semibold text-2xl">Premium</h1>
+                  <p className="pt-2 tracking-wide">
+                    <span className="text-gray-400 align-top">$ </span>
+                    <span className="text-3xl font-semibold">24.99</span>
+                    <span className="text-gray-400 font-medium">/ monthly</span>
+                  </p>
+                  <hr className="mt-4 border-1" />
+                  <div className="pt-8">
+                    <p className="font-semibold text-gray-400 text-left">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        All features in{' '}
+                        <span className="text-black">Startup</span>
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        Growth <span className="text-black">oriented</span>
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        <span className="text-black">Unlimited</span> cloud
+                        storage
+                      </span>
+                    </p>
+
+                    <Link to="/">
+                      <p className="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                        <span className="font-medium">Choose Plan</span>
+                        <span className="pl-2 material-icons align-middle text-sm">
+                          east
+                        </span>
+                      </p>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {subscriptionsInfo.map((subscription, index) => (
           <div
             className={`w-full px-4 md:w-1/2 lg:w-1/3 animate-jump-in animate-delay-[${subscription.delay}ms]`}
