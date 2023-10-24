@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import { BsCheck2 } from 'react-icons/bs';
 import { AiOutlineGift } from 'react-icons/ai';
+import { MdEast } from 'react-icons/md';
 import Layout from '../../components/layout';
 import { SubscriptionCard } from '../../types/subscriptions';
 
@@ -41,7 +42,7 @@ const Subscriptions = () => {
       <div className="mx-4 flex flex-wrap p-8">
         <div className="w-full mb-20">
           <div className="flex justify-center items-center">
-            <div className="">
+            <div className="hidden md:block">
               <div className="text-center font-semibold">
                 <h1 className="text-5xl">
                   <span className="text-blue-700 tracking-wide">Flexible </span>
@@ -52,7 +53,7 @@ const Subscriptions = () => {
                   <br /> your team.
                 </p>
               </div>
-              <div className="pt-24 flex items-center flex-col lg:flex-row">
+              <div className="pt-24 flex items-center flex-col lg:flex-row animate-jump-in">
                 <div className="w-96 p-8 bg-white text-center rounded-3xl pr-16 shadow-xl">
                   <h1 className="text-black font-semibold text-2xl">Basic</h1>
                   <p className="pt-2 tracking-wide">
@@ -74,13 +75,13 @@ const Subscriptions = () => {
                       <span className="inline-flex">
                         <BsCheck2 />
                       </span>
-                      <span className="pl-2">Bookkeeping Services</span>
+                      <span className="pl-2"><span className="text-black">Bookkeeping</span> Services</span>
                     </p>
                     <p className="font-semibold text-gray-400 text-left pt-5">
                       <span className="inline-flex">
                         <BsCheck2 />
                       </span>
-                      <span className="pl-2">Basic Tax and Compliance</span>
+                      <span className="pl-2"><span className="text-black">Basic Tax</span> and Compliance</span>
                     </p>
                     <p className="font-semibold text-gray-400 text-left pt-5">
                       <span className="inline-flex">
@@ -92,27 +93,27 @@ const Subscriptions = () => {
                       <span className="inline-flex">
                         <BsCheck2 />
                       </span>
-                      <span className="pl-2">Basic Financial Planning</span>
+                      <span className="pl-2"><span className="text-black">Basic</span> Financial Planning</span>
                     </p>
                     <p className="font-semibold text-gray-400 text-left pt-5">
                       <span className="inline-flex">
                         <BsCheck2 />
                       </span>
-                      <span className="pl-2">Basic Financial Analysis</span>
+                      <span className="pl-2"><span className="text-black">Basic</span> Financial Analysis</span>
                     </p>
 
                     <Link to="/">
-                      <p className="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                      <p className="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white flex items-center justify-center">
                         <span className="font-medium">Choose Plan</span>
-                        <span className="pl-2 material-icons align-middle text-sm">
-                          east
+                        <span className="text-[17px] ml-3">
+                          <MdEast />
                         </span>
                       </p>
                     </Link>
                   </div>
                 </div>
 
-                <div className="w-80 p-8 bg-gray-900 text-center rounded-3xl text-white border-4 shadow-xl border-white transform scale-125 my-20 lg:my-0">
+                <div className="w-80 md:w-96 p-8 bg-gray-900 text-center rounded-3xl text-white border-4 shadow-xl border-white transform scale-125 my-20 lg:my-0">
                   <h1 className="text-white font-semibold text-2xl">Pro</h1>
                   <p className="pt-2 tracking-wide">
                     <span className="text-gray-400 align-top">$ </span>
@@ -126,8 +127,8 @@ const Subscriptions = () => {
                         <BsCheck2 />
                       </span>
                       <span className="pl-2">
-                        All features in{' '}
-                        <span className="text-white">Basic</span>
+                        <span className="text-white">Detailed </span>
+                        Financial Statement Prep
                       </span>
                     </p>
                     <p className="font-semibold text-gray-400 text-left pt-5">
@@ -135,8 +136,7 @@ const Subscriptions = () => {
                         <BsCheck2 />
                       </span>
                       <span className="pl-2">
-                        Flexible{' '}
-                        <span className="text-white">call scheduling</span>
+                        <span className="text-white">Advanced</span>  Bookkeeping
                       </span>
                     </p>
                     <p className="font-semibold text-gray-400 text-left pt-5">
@@ -144,15 +144,50 @@ const Subscriptions = () => {
                         <BsCheck2 />
                       </span>
                       <span className="pl-2">
-                        <span className="text-white">15 TB</span> cloud storage
+                        <span className="text-white">Comprehensive</span> Tax
+                        and Compliance
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        <span className="text-white">Full Business</span> Launch
+                        Assistance
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        <span className="text-white">Advanced</span> Financial Planning
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        <span className="text-white">Advanced</span>  Financial Analysis
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        Media Library
+                        <span className="text-white"> Access</span>
                       </span>
                     </p>
 
                     <Link to="/">
-                      <p className="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                      <p className="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white flex items-center justify-center">
                         <span className="font-medium">Choose Plan</span>
-                        <span className="pl-2 material-icons align-middle text-sm">
-                          east
+                        <span className="text-[17px] ml-3">
+                          <MdEast />
                         </span>
                       </p>
                     </Link>
@@ -178,8 +213,8 @@ const Subscriptions = () => {
                         <BsCheck2 />
                       </span>
                       <span className="pl-2">
-                        All features in{' '}
-                        <span className="text-black">Startup</span>
+                        <span className="text-black">Complete</span> Financial
+                        Support
                       </span>
                     </p>
                     <p className="font-semibold text-gray-400 text-left pt-5">
@@ -187,7 +222,8 @@ const Subscriptions = () => {
                         <BsCheck2 />
                       </span>
                       <span className="pl-2">
-                        Growth <span className="text-black">oriented</span>
+                        <span className="text-black">Full-Service</span>{' '}
+                        Bookkeeping
                       </span>
                     </p>
                     <p className="font-semibold text-gray-400 text-left pt-5">
@@ -195,16 +231,60 @@ const Subscriptions = () => {
                         <BsCheck2 />
                       </span>
                       <span className="pl-2">
-                        <span className="text-black">Unlimited</span> cloud
-                        storage
+                        <span className="text-black">Tailored</span> Tax and
+                        Compliance
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        <span className="text-black">Business Launch</span>{' '}
+                        Excellence
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        <span className="text-black">Advanced</span> Financial
+                        Planning
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        <span className="text-black">Advanced</span> Financial
+                        Analysis
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        Media Library
+                        <span className="text-black"> Access</span>
+                      </span>
+                    </p>
+                    <p className="font-semibold text-gray-400 text-left pt-5">
+                      <span className="inline-flex">
+                        <BsCheck2 />
+                      </span>
+                      <span className="pl-2">
+                        <span className="text-black">Priority</span> Support
                       </span>
                     </p>
 
                     <Link to="/">
-                      <p className="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                      <p className="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white flex items-center justify-center">
                         <span className="font-medium">Choose Plan</span>
-                        <span className="pl-2 material-icons align-middle text-sm">
-                          east
+                        <span className="text-[17px] ml-3">
+                          <MdEast />
                         </span>
                       </p>
                     </Link>
