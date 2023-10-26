@@ -1,13 +1,15 @@
 import Layout from '../../components/layout';
 import LogoName from '../../../public/logo/logo-name.svg';
+import Mission from '../../../public/images/png/mission.png';
+import Vision from '../../../public/images/png/vision.png';
 
 const About = () => (
   <Layout>
-    <div className="p-10 leading-tight">
-      <h1 className="text-[40px] text-indigo-900 font-extrabold animate-fade-down animate-delay-[500ms]">
+    <div className="p-6 lg:p-10 leading-tight">
+      <h1 className="text-[22px] lg:text-[40px] text-indigo-900 font-extrabold animate-fade-down animate-delay-[500ms]">
         MILLENNIUM MANAGEMENT CONSULTANCY FIRM
       </h1>
-      <p className="text-gray-700 font-bold text-[28px] animate-fade-down animate-delay-[300ms]">
+      <p className="text-gray-700 font-bold text-[18px] lg:text-[28px] animate-fade-down animate-delay-[300ms]">
         Lets create great future together!
       </p>
 
@@ -16,13 +18,13 @@ const About = () => (
           <img
             src={LogoName}
             alt="logo-name"
-            className="h-[100px] animate-fade-down"
+            className="lg:h-[100px] animate-fade-down"
           />
         </div>
         <div className="w-full lg:w-3/6">
-          <h1 className="text-[30px] animate-fade-down font-bold">About Us</h1>
+          <h1 className="text-[20px] lg:text-[30px] animate-fade-down font-bold">About Us</h1>
 
-          <p className="text-gray-700 text-[20px] font-medium mt-5 animate-fade-down">
+          <p className="text-gray-700 text-[16px] lg:text-[20px] font-medium mt-5 animate-fade-down">
             {`Millennium Management Consultancy Firm is a dynamic startup founded by a
                 group of ambitious individuals. This innovative venture was
                 conceptualized and brought to life as part of a significant business
@@ -32,7 +34,7 @@ const About = () => (
                 primary focus.`}
           </p>
 
-          <p className="text-gray-700 text-[20px] font-medium mt-5 animate-fade-down">
+          <p className="text-gray-700 text-[16px] lg:text-[20px] font-medium mt-5 animate-fade-down">
             At Millennium, we blend professionalism, financial expertise, and a
             deep understanding of regulatory requirements to craft customized
             solutions that empower businesses to excel in a fiercely competitive
@@ -44,18 +46,18 @@ const About = () => (
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-10 mt-10">
-        <div className="w-full lg:w-3/6 py-10">
+      <div className="flex flex-col lg:flex-row-reverse gap-10 mt-10 items-center">
+        <div className="w-full lg:w-3/6 py-10 flex justify-end">
           <img
-            src={LogoName}
+            src={Mission}
             alt="logo-name"
-            className="h-[100px] animate-fade-down"
+            className="h-full animate-fade-down"
           />
         </div>
         <div className="w-full lg:w-3/6">
-          <h1 className="text-[30px] animate-fade-down font-bold">Mission</h1>
+          <h1 className="text-[20px] lg:text-[30px] animate-fade-down font-bold">Mission</h1>
 
-          <p className="text-gray-700 text-[20px] font-medium mt-5 animate-fade-down">
+          <p className="text-gray-700 text-[16px] lg:text-[20px] font-medium mt-5 animate-fade-down">
             {`At MM Consultancy, our mission is to empower businesses to achieve
             their full potential. We are dedicated to providing expert guidance
             and tailored solutions that drive growth, enhance efficiency, and
@@ -66,18 +68,18 @@ const About = () => (
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-10 my-10">
-        <div className="w-full lg:w-3/6 py-10">
+      <div className="flex flex-col lg:flex-row gap-10 my-10 items-center">
+        <div className="w-full lg:w-3/6 py-10 flex justify-start">
           <img
-            src={LogoName}
+            src={Vision}
             alt="logo-name"
-            className="h-[100px] animate-fade-down"
+            className="h-full animate-fade-down"
           />
         </div>
         <div className="w-full lg:w-3/6">
-          <h1 className="text-[30px] animate-fade-down font-bold">Vision</h1>
+          <h1 className="text-[20px] lg:text-[30px] animate-fade-down font-bold">Vision</h1>
 
-          <p className="text-gray-700 text-[20px] font-medium mt-5 animate-fade-down">
+          <p className="text-gray-700 text-[16px] lg:text-[20px] font-medium mt-5 animate-fade-down">
             Our vision at MM Consultancy is to be a catalyst for positive
             transformation in the business world. We aspire to set new standards
             of excellence in consultancy services, continuously evolving to meet

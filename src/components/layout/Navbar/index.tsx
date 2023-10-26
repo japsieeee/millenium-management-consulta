@@ -1,19 +1,26 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { BiSolidChevronDown } from 'react-icons/bi';
+import { useState } from 'react';
+import { Spin as Hamburger } from 'hamburger-react';
 import { IRoute } from '../../../types/routes';
-// import LogoName from '../../../../public/logo/logo-name.svg';
 import Logo from '../../../../public/logo/logo.svg';
 
 function Navbar() {
   const navigate = useNavigate();
   const handleNavigate = (path: IRoute['path']) => navigate(path);
+  const [isOpen, setOpen] = useState<boolean>(false);
+
+  const toggle = () => setOpen((prev) => !prev);
 
   return (
     <div>
       {/* web */}
       <nav className="text-indigo-900 items-center justify-between p-4 hidden lg:flex box-border h-[70px] border-b">
         <div>
-          <Link to="/" className="hover:opacity-80 duration-150 active:opacity-70">
+          <Link
+            to="/"
+            className="hover:opacity-80 duration-150 active:opacity-70"
+          >
             <img src={Logo} alt="logo-name" className="h-[60px] p-2" />
           </Link>
         </div>
@@ -163,6 +170,15 @@ function Navbar() {
         </div>
       </nav>
       {/* mobile */}
+      <nav className="text-indigo-900 items-center justify-between p-4 flex lg:hidden box-border h-[60px] border-b">
+        <Link
+          to="/"
+          className="hover:opacity-80 duration-150 active:opacity-70"
+        >
+          <img src={Logo} alt="logo-name" className="h-[50px] p-2" />
+        </Link>
+        <Hamburger size={25} toggled={isOpen} toggle={toggle} />
+      </nav>
     </div>
   );
 }

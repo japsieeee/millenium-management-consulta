@@ -7,6 +7,8 @@ import Operations from './pages/Operations';
 import Subscriptions from './pages/Subscriptions';
 import Contacts from './pages/Contacts';
 import SignIn from './pages/Signin';
+import FinancialAccounting from './pages/Services/FinancialAccounting';
+import Marketing from './pages/Marketing';
 
 function App() {
   const router = createBrowserRouter([
@@ -28,7 +30,7 @@ function App() {
     },
     {
       path: '/services/financial-accounting',
-      element: <h1>Financial Accounting</h1>,
+      element: <FinancialAccounting />,
     },
     {
       path: '/operations',
@@ -56,7 +58,7 @@ function App() {
     },
     {
       path: '/marketing',
-      element: <h1>Marketing</h1>,
+      element: <Marketing />,
     },
     {
       path: '/subscriptions',

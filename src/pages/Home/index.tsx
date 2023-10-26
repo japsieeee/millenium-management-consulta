@@ -5,7 +5,7 @@ import Excel from '/images/excel.svg';
 import Docs from '/images/docs.svg';
 import Drive from '/images/drive.svg';
 import Office from '/images/office.svg';
-import HomeSvg from '/images/homeSvg.svg';
+import Home3D from '../../../public/images/png/home.png';
 import Layout from '../../components/layout';
 import Button from '../../components/common/Button';
 
@@ -18,11 +18,11 @@ function Home() {
             id="box"
             className="px-5 lg:px-0 max-w-[500px] mt-10 leading-tight"
           >
-            <h1 className="font-bold text-[34px] animate-fade-down animate-delay-[500ms]">
+            <h1 className="font-bold text-[28px] lg:text-[34px] animate-fade-down animate-delay-[500ms]">
               Modern Platform For Your Business
             </h1>
 
-            <p className="text-[26px] mt-3 animate-fade-down animate-delay-[300ms]">
+            <p className="text-[22px] lg:text-[26px] mt-3 animate-fade-down animate-delay-[300ms]">
               Quickly and Easily Create Any Business Document
             </p>
 
@@ -30,7 +30,7 @@ function Home() {
 
             <Button action={() => {}} label="Get Started" size="20" isBlock />
 
-            <p className="text-[22px] mt-5 animate-fade-down">
+            <p className="text-[18px] lg:text-[22px] mt-5 animate-fade-down">
               Customizable and Ready made Business documents compatible with:
             </p>
 
@@ -94,13 +94,11 @@ function Home() {
           </div>
         </div>
         <div className="w-full flex justify-center items-center p-2">
-          <Link to="https://storyset.com/people" target="_blank">
-            <img
-              src={HomeSvg}
-              className="h-[600px] animate-jump-in animate-delay-[1500ms]"
-              alt="People illustrations by Storyset"
-            />
-          </Link>
+          <img
+            src={Home3D}
+            className="h-[300px] lg:h-[600px] animate-jump-in animate-delay-[1500ms]"
+            alt="People illustrations by Storyset"
+          />
         </div>
       </div>
     </Layout>
