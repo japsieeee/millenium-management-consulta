@@ -110,6 +110,12 @@ function Navbar() {
             </div>
           </div>
 
+          <div className="hover:opacity-80 duration-150 mr-6">
+            <Link to="/marketing" className="mr-1">
+              Marketing
+            </Link>
+          </div>
+
           <div className="group relative duration-200 mr-6 z-10">
             <div className="flex items-center hover:opacity-80 duration-150">
               <Link to="/subscriptions" className="mr-1">

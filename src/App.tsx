@@ -5,6 +5,8 @@ import Services from './pages/Services';
 import BusinessCompliance from './pages/Services/BusinessCompliance';
 import Operations from './pages/Operations';
 import Subscriptions from './pages/Subscriptions';
+import Contacts from './pages/Contacts';
+import SignIn from './pages/Signin';
 
 function App() {
   const router = createBrowserRouter([
@@ -53,6 +55,10 @@ function App() {
       element: <h1>Operation</h1>,
     },
     {
+      path: '/marketing',
+      element: <h1>Marketing</h1>,
+    },
+    {
       path: '/subscriptions',
       element: <Subscriptions />,
     },
@@ -70,11 +76,11 @@ function App() {
     },
     {
       path: '/sign-in',
-      element: <h1>Sign In</h1>,
+      element: <SignIn />,
     },
     {
       path: '/contact',
-      element: <h1>Contact</h1>,
+      element: <Contacts />,
     },
   ]);
 

@@ -1,8 +1,11 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import Layout from '../../components/layout';
+
+// import Taxation from '../../../public/images/png/taxation.png';
 
 const BusinessCompliance = () => (
   <Layout>
-    <h1>Business Compliance</h1>
+    <h1>Hey</h1>
   </Layout>
 );
 
