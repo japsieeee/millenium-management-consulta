@@ -18,19 +18,19 @@ function Home() {
             id="box"
             className="px-5 lg:px-0 max-w-[500px] mt-10 leading-tight"
           >
-            <h1 className="font-bold text-[28px] lg:text-[34px] animate-fade-down animate-delay-[500ms]">
+            <h1 className="font-archivo text-[24px] lg:text-[36px] animate-fade-down animate-delay-[500ms]">
               Modern Platform For Your Business
             </h1>
 
-            <p className="text-[22px] lg:text-[26px] mt-3 animate-fade-down animate-delay-[300ms]">
+            <p className="text-[18px] lg:text-[26px] mt-3 animate-fade-down animate-delay-[300ms]">
               Quickly and Easily Create Any Business Document
             </p>
 
             <div id="divider" className="my-4" />
 
-            <Button action={() => {}} label="Get Started" size="20" isBlock />
+            <Button action={() => {}} label="Get Started" isBlock />
 
-            <p className="text-[18px] lg:text-[22px] mt-5 animate-fade-down">
+            <p className="text-[16px] lg:text-[22px] mt-5 animate-fade-down">
               Customizable and Ready made Business documents compatible with:
             </p>
 

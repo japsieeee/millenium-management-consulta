@@ -1,6 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import { Link } from 'react-router-dom';
-import { AiOutlineGift } from 'react-icons/ai';
+import { MdAccountBalance } from 'react-icons/md';
+import { GrCompliance } from 'react-icons/gr';
 import Layout from '../../components/layout';
 import { ServiceCard } from '../../types/services';
 
@@ -12,7 +13,7 @@ const Services = () => {
       Laudantium ex voluptates dolorum rem obcaecati quam alias vel
       minus adipisci sequi ratione optio possimus ipsam.`,
       link: '/services/business-compliance',
-      icon: <AiOutlineGift />,
+      icon: <GrCompliance />,
       delay: 500,
     },
     {
@@ -21,14 +22,14 @@ const Services = () => {
       illo, odio error vel ab dolor explicabo nam sed voluptas
       maiores.`,
       link: '/services/financial-accounting',
-      icon: <AiOutlineGift />,
+      icon: <MdAccountBalance />,
       delay: 700,
     },
   ];
 
   return (
     <Layout>
-      <div className="mx-4 flex flex-wrap p-8">
+      <div className="mx-4 flex flex-wrap py-8">
         {servicesInfo.map((service, index) => (
           <div
             className={`w-full px-4 md:w-1/2 lg:w-1/3 animate-jump-in animate-delay-[${service.delay}ms]`}

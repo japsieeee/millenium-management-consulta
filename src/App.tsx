@@ -9,6 +9,11 @@ import Contacts from './pages/Contacts';
 import SignIn from './pages/Signin';
 import FinancialAccounting from './pages/Services/FinancialAccounting';
 import Marketing from './pages/Marketing';
+import SupplyChain from './pages/Operations/SupplyChain';
+import MarketingManagement from './pages/Operations/MarketingManagement';
+import FinancialManagement from './pages/Operations/FinancialManagement';
+import HumanResourceDevelopment from './pages/Operations/HumanResourceDevelopment';
+import BusinessProcessingOutsource from './pages/Operations/BusinessProcessingOutsource';
 
 function App() {
   const router = createBrowserRouter([
@@ -38,23 +43,23 @@ function App() {
     },
     {
       path: '/operations/supply-chain',
-      element: <h1>Supply Chain</h1>,
+      element: <SupplyChain />,
     },
     {
       path: '/operations/marketing-management',
-      element: <h1>Supply Chain</h1>,
+      element: <MarketingManagement />,
     },
     {
       path: '/operations/financial-management',
-      element: <h1>Supply Chain</h1>,
+      element: <FinancialManagement />,
     },
     {
       path: '/operations/human-resource-development',
-      element: <h1>Supply Chain</h1>,
+      element: <HumanResourceDevelopment />,
     },
     {
       path: '/operations/business-processing-outsource',
-      element: <h1>Operation</h1>,
+      element: <BusinessProcessingOutsource />,
     },
     {
       path: '/marketing',
