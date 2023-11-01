@@ -11,11 +11,7 @@ const SignIn = () => (
           to="/"
           className="flex items-center mb-6 text-2xl font-semibold text-gray-900"
         >
-          <img
-            className="w-8 h-8 mr-2"
-            src={Logo}
-            alt="logo"
-          />
+          <img className="w-8 h-8 mr-2" src={Logo} alt="logo" />
           Millenium
         </Link>
         <div className="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
@@ -57,9 +53,7 @@ const SignIn = () => (
                 />
               </div>
               <div className="flex items-center justify-between">
-                <span
-                  className="text-sm font-medium text-primary-600 hover:underline cursor-default text-gray-400"
-                >
+                <span className="text-sm font-medium text-primary-600 hover:underline cursor-default text-gray-400">
                   Forgot password?
                 </span>
               </div>
