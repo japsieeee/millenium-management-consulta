@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 
 import {
-  BsTwitter, BsFacebook, BsInstagram, BsPinterest,
+  BsTwitter,
+  BsFacebook,
+  BsInstagram,
+  BsPinterest,
 } from 'react-icons/bs';
 
 import { MdAlternateEmail } from 'react-icons/md';
@@ -32,7 +35,10 @@ const Footer = () => (
       </Link>
     </div>
 
-    <Link className="text-[16px] lg:text-[18px] hover:text-blue-300 duration-150 my-4" to="/#">
+    <Link
+      className="text-[16px] lg:text-[18px] hover:text-blue-300 duration-150 my-4"
+      to="/#"
+    >
       MMCONSULTANCY.COM
     </Link>
 
@@ -49,28 +55,49 @@ const Footer = () => (
     </div>
 
     <div className="flex items-center text-[24px] lg:text-[32px] mt-5">
-      <Link to="https://www.instagram.com/millenniummgt.cf/" className="mx-2 duration-150 hover:text-[#f97316]" target="_blank">
+      <Link
+        to="https://www.instagram.com/millenniummgt.cf/"
+        className="mx-2 duration-150 hover:text-[#f97316]"
+        target="_blank"
+      >
         <BsInstagram />
       </Link>
 
-      <Link to="https://www.facebook.com/profile.php?id=61551846464240" className="mx-2 duration-150 hover:text-[#3b82f6]" target="_blank">
+      <Link
+        to="https://www.facebook.com/profile.php?id=61551846464240"
+        className="mx-2 duration-150 hover:text-[#3b82f6]"
+        target="_blank"
+      >
         <BsFacebook />
       </Link>
 
-      <Link to="https://twitter.com/MillenniumFirm" className="mx-2 duration-150 hover:text-[#22d3ee]" target="_blank">
+      <Link
+        to="https://twitter.com/MillenniumFirm"
+        className="mx-2 duration-150 hover:text-[#22d3ee]"
+        target="_blank"
+      >
         <BsTwitter />
       </Link>
 
-      <Link to="https://pin.it/rymEMRL" className="mx-2 duration-150 hover:text-[#ef4444]" target="_blank">
+      <Link
+        to="https://pin.it/rymEMRL"
+        className="mx-2 duration-150 hover:text-[#ef4444]"
+        target="_blank"
+      >
         <BsPinterest />
       </Link>
 
-      <Link to="mailto:millenniummgt.cf@gmail.com" className="mx-2 duration-150 hover:text-[#450a0a]">
+      <Link
+        to="mailto:millenniummgt.cf@gmail.com"
+        className="mx-2 duration-150 hover:text-[#450a0a]"
+      >
         <MdAlternateEmail />
       </Link>
     </div>
 
-    <h1 className="text-center text-[15px] lg:text-[20px] mt-10">All rights reserved</h1>
+    <h1 className="text-center text-[15px] lg:text-[20px] mt-10">
+      All rights reserved
+    </h1>
   </div>
 );
 

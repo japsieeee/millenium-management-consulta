@@ -22,7 +22,9 @@ const About = () => (
           />
         </div>
         <div className="w-full lg:w-3/6">
-          <h1 className="text-[20px] lg:text-[30px] animate-fade-down font-bold">About Us</h1>
+          <h1 className="text-[20px] lg:text-[30px] animate-fade-down font-bold">
+            About Us
+          </h1>
 
           <p className="text-gray-700 text-[16px] lg:text-[20px] font-medium mt-5 animate-fade-down">
             {`Millennium Management Consultancy Firm is a dynamic startup founded by a
@@ -55,7 +57,9 @@ const About = () => (
           />
         </div>
         <div className="w-full lg:w-3/6">
-          <h1 className="text-[20px] lg:text-[30px] animate-fade-down font-bold">Mission</h1>
+          <h1 className="text-[20px] lg:text-[30px] animate-fade-down font-bold">
+            Mission
+          </h1>
 
           <p className="text-gray-700 text-[16px] lg:text-[20px] font-medium mt-5 animate-fade-down">
             {`At MM Consultancy, our mission is to empower businesses to achieve
@@ -77,7 +81,9 @@ const About = () => (
           />
         </div>
         <div className="w-full lg:w-3/6">
-          <h1 className="text-[20px] lg:text-[30px] animate-fade-down font-bold">Vision</h1>
+          <h1 className="text-[20px] lg:text-[30px] animate-fade-down font-bold">
+            Vision
+          </h1>
 
           <p className="text-gray-700 text-[16px] lg:text-[20px] font-medium mt-5 animate-fade-down">
             Our vision at MM Consultancy is to be a catalyst for positive
