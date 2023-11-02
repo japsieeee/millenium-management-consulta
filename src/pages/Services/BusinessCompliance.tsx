@@ -1,7 +1,7 @@
 import Layout from '../../components/layout';
 import Taxation from '../../../public/images/png/taxation.png';
 import Permit from '../../../public/images/png/permit.png';
-
+asd
 const BusinessCompliance = () => (
   <Layout>
     <div className="p-6 lg:p-10 leading-tight">
