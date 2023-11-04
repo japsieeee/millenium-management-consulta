@@ -4,15 +4,15 @@ import checker from 'vite-plugin-checker';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    checker({
-      typescript: true,
-      eslint: {
-        lintCommand:
-          'eslint src/ --ext ts,tsx --report-unused-disable-directives --max-warnings 0',
-      },
-      overlay: false,
-    }),
-  ],
+	plugins: [
+		react(),
+		checker({
+			typescript: true,
+			eslint: {
+				lintCommand:
+					'eslint src/ --ext ts,tsx --report-unused-disable-directives --max-warnings 0',
+			},
+			overlay: false,
+		}),
+	],
 });
