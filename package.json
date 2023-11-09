@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "prepare": "husky install",
     "prettier": "prettier --watch",
-    "commitlint": "commitlint --edit"
+    "commitlint": "commitlint --edit",
+    "docker-up": "docker-compose -f docker-compose.dev.yml up",
+    "docker-down": "docker-compose -f docker-compose.dev.yml down"
   },
   "dependencies": {
     "hamburger-react": "^2.5.0",

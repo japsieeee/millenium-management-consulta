@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import { Link } from 'react-router-dom';
 import Layout from '../../components/layout';
-import Logo from '../../../public/logo/logo.svg';
 
 const SignIn = () => (
 	<Layout>
@@ -10,7 +9,7 @@ const SignIn = () => (
 				<Link
 					to='/'
 					className='flex items-center mb-6 text-2xl font-semibold text-gray-900'>
-					<img className='w-8 h-8 mr-2' src={Logo} alt='logo' />
+					<img className='w-8 h-8 mr-2' src='/logo/logo.svg' alt='logo' />
 					Millenium
 				</Link>
 				<div className='w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0'>

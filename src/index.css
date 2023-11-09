@@ -4,22 +4,22 @@
 
 @font-face {
   font-family: 'Quicksand';
-  src: url('/public/fonts/quicksand.ttf');
+  src: url('/fonts/quicksand.ttf');
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('/public/fonts/montserrat.ttf');
+  src: url('/fonts/montserrat.ttf');
 }
 
 @font-face {
   font-family: 'Notosans';
-  src: url('/public/fonts/notosans.ttf');
+  src: url('/fonts/notosans.ttf');
 }
 
 @font-face {
   font-family: 'Archivo';
-  src: url('/public/fonts/archivo.ttf');
+  src: url('/fonts/archivo.ttf');
 }
 
 * {

@@ -15,7 +15,6 @@ import {
 } from 'react-icons/md';
 import { GrCompliance, GrServices } from 'react-icons/gr';
 import { AiFillHome } from 'react-icons/ai';
-import Logo from '../../../../public/logo/logo.svg';
 import { IRoute } from '../../../types/routes';
 
 function Navbar() {
@@ -40,7 +39,11 @@ function Navbar() {
 					<Link
 						to='/'
 						className='hover:opacity-80 duration-150 active:opacity-70'>
-						<img src={Logo} alt='logo-name' className='h-[60px] p-2' />
+						<img
+							src='/logo/logo.svg'
+							alt='logo-name'
+							className='h-[60px] p-2'
+						/>
 					</Link>
 				</div>
 				<div className='flex items-center text-[16px]'>
@@ -225,7 +228,7 @@ function Navbar() {
 				<Link
 					to='/'
 					className='hover:opacity-80 duration-150 active:opacity-70'>
-					<img src={Logo} alt='logo-name' className='h-[50px] p-2' />
+					<img src='/logo/logo.svg' alt='logo-name' className='h-[50px] p-2' />
 				</Link>
 				<Hamburger size={25} toggled={isOpen} toggle={toggle} />
 
