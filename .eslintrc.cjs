@@ -24,6 +24,7 @@ module.exports = {
 		'react/jsx-indent-props': 'off',
 		'import/prefer-default-export': 'off',
 		'unused-imports/no-unused-imports': 'off',
+		'object-curly-newline': 'off',
 		'import/extensions': 'off',
 		'import/no-unresolved': 'off',
 		'linebreak-style': 'off',
