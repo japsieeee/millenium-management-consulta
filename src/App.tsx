@@ -14,88 +14,90 @@ import MarketingManagement from './pages/Operations/MarketingManagement';
 import FinancialManagement from './pages/Operations/FinancialManagement';
 import HumanResourceDevelopment from './pages/Operations/HumanResourceDevelopment';
 import BusinessProcessingOutsource from './pages/Operations/BusinessProcessingOutsource';
+import TermsAndPrivacy from './pages/TermsAndPrivacy';
+import Payments from './pages/Payments';
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <Home />,
-    },
-    {
-      path: '/about',
-      element: <About />,
-    },
-    {
-      path: '/services',
-      element: <Services />,
-    },
-    {
-      path: '/services/business-compliance',
-      element: <BusinessCompliance />,
-    },
-    {
-      path: '/services/financial-accounting',
-      element: <FinancialAccounting />,
-    },
-    {
-      path: '/operations',
-      element: <Operations />,
-    },
-    {
-      path: '/operations/supply-chain',
-      element: <SupplyChain />,
-    },
-    {
-      path: '/operations/marketing-management',
-      element: <MarketingManagement />,
-    },
-    {
-      path: '/operations/financial-management',
-      element: <FinancialManagement />,
-    },
-    {
-      path: '/operations/human-resource-development',
-      element: <HumanResourceDevelopment />,
-    },
-    {
-      path: '/operations/business-processing-outsource',
-      element: <BusinessProcessingOutsource />,
-    },
-    {
-      path: '/marketing',
-      element: <Marketing />,
-    },
-    {
-      path: '/subscriptions',
-      element: <Subscriptions />,
-    },
-    {
-      path: '/subscriptions/payment',
-      element: <h1>Payment</h1>,
-    },
-    {
-      path: '/terms-and-privacy',
-      element: <h1>Terms and privacy</h1>,
-    },
-    {
-      path: '/sign-up',
-      element: <h1>Sign Un</h1>,
-    },
-    {
-      path: '/sign-in',
-      element: <SignIn />,
-    },
-    {
-      path: '/contact',
-      element: <Contacts />,
-    },
-  ]);
+	const router = createBrowserRouter([
+		{
+			path: '/',
+			element: <Home />,
+		},
+		{
+			path: '/about',
+			element: <About />,
+		},
+		{
+			path: '/services',
+			element: <Services />,
+		},
+		{
+			path: '/services/business-compliance',
+			element: <BusinessCompliance />,
+		},
+		{
+			path: '/services/financial-accounting',
+			element: <FinancialAccounting />,
+		},
+		{
+			path: '/operations',
+			element: <Operations />,
+		},
+		{
+			path: '/operations/supply-chain',
+			element: <SupplyChain />,
+		},
+		{
+			path: '/operations/marketing-management',
+			element: <MarketingManagement />,
+		},
+		{
+			path: '/operations/financial-management',
+			element: <FinancialManagement />,
+		},
+		{
+			path: '/operations/human-resource-development',
+			element: <HumanResourceDevelopment />,
+		},
+		{
+			path: '/operations/business-processing-outsource',
+			element: <BusinessProcessingOutsource />,
+		},
+		{
+			path: '/marketing',
+			element: <Marketing />,
+		},
+		{
+			path: '/subscriptions',
+			element: <Subscriptions />,
+		},
+		{
+			path: '/subscriptions/payment',
+			element: <Payments />,
+		},
+		{
+			path: '/terms-and-privacy',
+			element: <TermsAndPrivacy />,
+		},
+		{
+			path: '/sign-up',
+			element: <h1>Sign Un</h1>,
+		},
+		{
+			path: '/sign-in',
+			element: <SignIn />,
+		},
+		{
+			path: '/contact',
+			element: <Contacts />,
+		},
+	]);
 
-  return (
-    <main>
-      <RouterProvider router={router} />
-    </main>
-  );
+	return (
+		<main>
+			<RouterProvider router={router} />
+		</main>
+	);
 }
 
 export default App;
